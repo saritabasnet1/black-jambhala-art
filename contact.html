@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact the Black Jambhala Art Journal</title>
+<meta name="description" content="Contact the Black Jambhala Art Journal — send a question or suggestion about Traditional Black Jambhala Art, thangka collecting or the journal.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://saritabasnet1.github.io/black-jambhala-art/contact.html">
+<meta property="og:title" content="Contact the Black Jambhala Art Journal">
+<meta property="og:description" content="Contact the Black Jambhala Art Journal — send a question or suggestion about Traditional Black Jambhala Art, thangka collecting or the journal.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saritabasnet1.github.io/black-jambhala-art/contact.html">
+<meta property="og:site_name" content="Black Jambhala Art Journal">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Contact — Black Jambhala Art Journal", "description": "Contact the Black Jambhala Art Journal — send a question or suggestion about Traditional Black Jambhala Art, thangka collecting or the journal.", "url": "https://saritabasnet1.github.io/black-jambhala-art/contact.html", "isPartOf": {"@type": "WebSite", "name": "Black Jambhala Art Journal", "url": "https://saritabasnet1.github.io/black-jambhala-art/"}}</script>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">Black Jambhala Art Journal<small>Traditional Black Jambhala Art &bull; Buddhist Art &bull; Study</small></div><nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav></div></header>
+<section class="hero"><div class="wrap"><h1>Contact — Black Jambhala Art Journal</h1><div class="rule"></div><p class="lede">Contact the Black Jambhala Art Journal — send a question or suggestion about Traditional Black Jambhala Art, thangka collecting or the journal.</p></div></section>
+<main><div class="wrap"><p>--- ---</p><figure><svg width="300" height="200" viewBox="0 0 300 200" role="img" aria-label="A minimal contact page with a simple form: name, email, subject and message fields on a clean background"><rect width="300" height="200" fill="#FBF8F1"/><rect x="70" y="60" width="160" height="90" rx="4" fill="#FFFFFF" stroke="#C19A3D" stroke-width="3"/><path d="M70 64 L150 120 L230 64" stroke="#C19A3D" stroke-width="3" fill="none"/><path d="M96 132 L130 132 M96 118 L150 118" stroke="#232B45" stroke-width="3"/><circle cx="200" cy="132" r="8" fill="#C19A3D"/></svg><figcaption>A minimal contact page with a simple form: name, email, subject and message fields on a clean background.</figcaption></figure><p>The Black Jambhala Art Journal welcomes questions and suggestions from readers. If you have a question about a painting, about the articles on this site, or about what the journal should cover next, you are welcome to write.</p><p>To get in touch, please use the form below and enter your own details:</p><ul><li>Full Name</li><li>Email</li><li>Subject (optional)</li><li>Message</li></ul><p>Please write your message in full, so that it can be answered properly. Questions about reading a thangka, about collecting, or about the practice described in the articles are all welcome. The journal answers questions about the subject of the site — the traditional painting of Black Jambhala and the teaching it carries — and it does not offer practice instructions, which are received from a qualified lama.</p><p>When you write, it helps to say a little about where you are starting from. A reader who has just bought a first painting will have different questions from a reader who has collected for years, and a reader who is studying Buddhist art will have different questions from a reader who simply saw a painting and wanted to understand it. There is no wrong starting point. The journal is written for beginners as well as for collectors, and every question is read with the same attention.</p><p>A few subjects come up often, and they are worth mentioning here. Readers often ask how to tell a handmade thangka from a print, how to judge the quality of the gold work, and where a painting should be hung. Those questions are answered in the <a href="articles/article-5.html">collector&#x27;s guide</a>. Readers also ask about the meaning of the skull cup and the mongoose, and about the difference between the black form and the other four Jambhalas. Those questions are answered in the article on <a href="articles/article-2.html">reading the iconography</a> and the article on the <a href="articles/article-1.html">five Jambhalas</a>. Questions about the practice itself are answered in general educational terms in the article on <a href="articles/article-3.html">Black Jambhala in practice</a>.</p><p>For readers who are new to the subject, the best place to start is the <a href="index.html">Home page</a> and the <a href="blog.html">Blog page</a>, which lists all five articles. The <a href="about.html">About page</a> explains the journal&#x27;s purpose, and the <a href="blog.html">Blog page</a> describes the guidance the journal offers. Messages are read by the journal&#x27;s editor, and replies are sent to the email address given in the form.</p><h2>Send a Message</h2>
+<p>Use the form below to prepare your message. The form only prepares a draft in your browser — it does not send mail anywhere.</p>
+<form id="contact-form">
+<label for="f-name">Full Name</label>
+<input id="f-name" name="name" type="text" required>
+<label for="f-email">Email</label>
+<input id="f-email" name="email" type="email" required>
+<label for="f-subject">Subject (optional)</label>
+<input id="f-subject" name="subject" type="text">
+<label for="f-message">Message</label>
+<textarea id="f-message" name="message" rows="6" required></textarea>
+<button type="submit">Prepare message</button>
+</form>
+<div id="draft" role="status"></div>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('f-name').value.trim();
+  var email = document.getElementById('f-email').value.trim();
+  var subject = document.getElementById('f-subject').value.trim();
+  var message = document.getElementById('f-message').value.trim();
+  var draft = 'Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + (subject || '(none)') + '\n\nMessage:\n' + message;
+  var box = document.getElementById('draft');
+  box.style.display = 'block';
+  box.textContent = 'Your message is ready to copy and send:\n\n' + draft + '\n\n(This form prepares a draft only; it does not send mail.)';
+});
+</script></div></main>
+<footer><div class="wrap"><p>Black Jambhala Art Journal is an independent educational journal about Buddhist art and the Black Jambhala wrathful wealth deity.</p><nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav><p>Published 2026.</p></div></footer>
+</body>
+</html>
